@@ -1,0 +1,119 @@
+
+// main: style.scss /*--------------------------------Sections Header--------------------------------*/
+.section-header {
+ margin-bottom: 30px;
+ h2 {
+ font-size: 32px;
+ color: $secondary-color;
+ text-transform: uppercase;
+ font-weight: 700;
+ position: relative;
+ padding-bottom: 20px;
+ &::before {
+ content: '';
+ position: absolute;
+ display: block;
+ width: 50px;
+ height: 3px;
+ background: $accent-color;
+ bottom: 0;
+ left: 0;
+}
+}
+ p {
+ padding: 0;
+ margin: 0;
+}
+}
+/*--------------------------------Contact Section--------------------------------*/
+#contact {
+	padding: 30px 0;
+background: $sectionbackground-color;
+ p {
+ margin-bottom: 0;
+ color: #000;
+}
+h1 {
+		font-family: "Webly Sleek Light", Helvetica-, droid sans, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+  margin-bottom: 15px;
+  color: #999;
+}
+a {
+	color: #000;
+ &:hover {
+ color: $accent-color;
+}
+}
+.title {
+				font-family: "Webly Sleek Light", Helvetica-, droid sans, sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+	margin: 30px 0px;
+}
+.form {
+	margin: 30px 0px;
+ #sendmessage {
+ color: $accent-color;
+ border:1px solid $accent-color;
+ display:none;
+ text-align:center;
+ padding:15px;
+ font-weight:600;
+ margin-bottom:15px;
+}
+#errormessage {
+	color: red;
+	display: none;
+	border: 1px solid red;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+#sendmessage.show, #errormessage.show, .show {
+	display: block;
+}
+.validation {
+	color: red;
+	display: none;
+	margin: 0 0 20px;
+	font-weight: 400;
+	font-size: 13px;
+}
+input, select {
+	padding: 10px 14px;
+	border-radius: 0;
+	border-top: none;
+	box-shadow: none;
+	font-size: 15px;
+}
+}
+}
+button {
+	border: 0;
+	border-radius: 3px;
+	padding: 10px 10px;
+	color: #fff;
+	transition: 0.4s;
+	cursor: pointer;
+ &[type="submit"] {
+ background: $accent-color;
+ &:hover {
+ background: darken($accent-color, 10%);
+}
+}
+ &[type="button"] {
+ background: $accent-color;
+ &:hover {
+ background: darken($accent-color, 10%);
+}
+}
+ &[type="reset"] {
+ background: $reset-color;
+ &:hover {
+ background: darken($reset-color, 10%);
+}
+}
+}

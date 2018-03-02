@@ -1,0 +1,111 @@
+
+// main: style.scss /*--------------------# General--------------------*/
+@font-face {
+font-family:'Webly Sleek';
+src:url(../fonts/weblysleekuil-webfont.eot);
+src:url(../fonts/weblysleekuil-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuil-webfont.woff2) format("woff2"), url(../fonts/weblysleekuil-webfont.woff) format("woff"), url(../fonts/weblysleekuil-webfont.ttf) format("truetype"), url(../fonts/weblysleekuil-webfont.svg#weblysleek_uilight) format("svg");
+font-weight:300;
+font-style:normal
+}
+@font-face {
+	font-family: 'Webly Sleek Light';
+	src: url(../fonts/weblysleekuil-webfont.eot);
+	src: url(../fonts/weblysleekuil-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuil-webfont.woff2) format("woff2"), url(../fonts/weblysleekuil-webfont.woff) format("woff"), url(../fonts/weblysleekuil-webfont.ttf) format("truetype"), url(../fonts/weblysleekuil-webfont.svg#weblysleek_uilight) format("svg");
+	font-weight: 100;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Webly Sleek Italic';
+	src: url(../fonts/weblysleekuili-webfont.eot);
+	src: url(../fonts/weblysleekuili-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuili-webfont.woff2) format("woff2"), url(../fonts/weblysleekuili-webfont.woff) format("woff"), url(../fonts/weblysleekuili-webfont.ttf) format("truetype"), url(../fonts/weblysleekuili-webfont.svg#weblysleek_uilight_italic) format("svg");
+	font-weight: 300;
+	font-style: italic
+}
+@font-face {
+	font-family: 'Webly Sleek SemiBold';
+	src: url(../fonts/weblysleekuisb-webfont.eot);
+	src: url(../fonts/weblysleekuisb-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisb-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisb-webfont.woff) format("woff"), url(../fonts/weblysleekuisb-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisb-webfont.svg#weblysleek_uisemibold) format("svg");
+	font-weight: 700;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Webly Sleek Semibold Italic';
+	src: url(../fonts/weblysleekuisbi-webfont.eot);
+	src: url(../fonts/weblysleekuisbi-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisbi-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisbi-webfont.woff) format("woff"), url(../fonts/weblysleekuisbi-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisbi-webfont.svg#weblysleek_uisemibold_italic) format("svg");
+	font-weight: 700;
+	font-style: italic
+}
+@font-face {
+	font-family: 'Webly Sleek SemiLight';
+	src: url(../fonts/weblysleekuisl-webfont.eot);
+	src: url(../fonts/weblysleekuisl-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisl-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisl-webfont.woff) format("woff"), url(../fonts/weblysleekuisl-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisl-webfont.svg#weblysleek_uisemilight) format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Webly Sleek SemiLight Italic';
+	src: url(../fonts/weblysleekuisli-webfont.eot);
+	src: url(../fonts/weblysleekuisli-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisli-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisli-webfont.woff) format("woff"), url(../fonts/weblysleekuisli-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisli-webfont.svg#weblysleek_uisemilight_italic) format("svg");
+	font-weight: 400;
+	font-style: italic
+}
+@font-face {
+	font-family: icons;
+	src: url(../fonts/icons/icons.eot?qta720);
+	src: url(../fonts/icons/icons.eot?#iefixqta720) format("embedded-opentype"), url(../fonts/icons/icons.ttf?qta720) format("truetype"), url(../fonts/icons/icons.woff?qta720) format("woff"), url(../fonts/icons/icons.svg?qta720#icons) format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+ body {
+ background: #fff;
+ color: $text-color;
+ font-family: $text-font;
+}
+ a, i {
+ color: $link-color;
+ transition: 0.5s;
+}
+ a:hover, a:active, a:focus {
+ color: lighten($accent-color, 0.2%);
+ outline: none;
+ text-decoration: none;
+}
+ p {
+ padding: 0;
+ margin: 0 0 30px 0;
+}
+ h1, h2, h3, h4, h5, h6 {
+ font-family: $heading-font;
+ font-weight: 400;
+ margin: 0 0 20px 0;
+ padding: 0;
+}
+
+/* Back to top button */
+.back-to-top {
+ position: fixed;
+ display: none;
+ background: $accent-color;
+ color: #fff;
+ padding: 6px 12px 9px 12px;
+ font-size: 16px;
+ border-radius: 2px;
+ right:15px;
+ bottom: 15px;
+ transition: background 0.5s;
+ @media (max-width: 768px) {
+ bottom: 15px;
+}
+ &:focus {
+ background: $accent-color;
+ color: #fff;
+ outline: none;
+}
+ &:hover {
+ background: $secondary-color;
+ color: #fff;
+}
+ .nondisplay {
+ display: none;
+}
+}

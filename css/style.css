@@ -1,0 +1,532 @@
+
+/*--------------------------------General--------------------------------*/
+
+@font-face {
+font-family:'Webly Sleek';
+src:url(../fonts/weblysleekuil-webfont.eot);
+src:url(../fonts/weblysleekuil-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuil-webfont.woff2) format("woff2"), url(../fonts/weblysleekuil-webfont.woff) format("woff"), url(../fonts/weblysleekuil-webfont.ttf) format("truetype"), url(../fonts/weblysleekuil-webfont.svg#weblysleek_uilight) format("svg");
+font-weight:300;
+font-style:normal
+}
+@font-face {
+	font-family: 'Webly Sleek Light';
+	src: url(../fonts/weblysleekuil-webfont.eot);
+	src: url(../fonts/weblysleekuil-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuil-webfont.woff2) format("woff2"), url(../fonts/weblysleekuil-webfont.woff) format("woff"), url(../fonts/weblysleekuil-webfont.ttf) format("truetype"), url(../fonts/weblysleekuil-webfont.svg#weblysleek_uilight) format("svg");
+	font-weight: 100;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Webly Sleek Italic';
+	src: url(../fonts/weblysleekuili-webfont.eot);
+	src: url(../fonts/weblysleekuili-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuili-webfont.woff2) format("woff2"), url(../fonts/weblysleekuili-webfont.woff) format("woff"), url(../fonts/weblysleekuili-webfont.ttf) format("truetype"), url(../fonts/weblysleekuili-webfont.svg#weblysleek_uilight_italic) format("svg");
+	font-weight: 300;
+	font-style: italic
+}
+@font-face {
+	font-family: 'Webly Sleek SemiBold';
+	src: url(../fonts/weblysleekuisb-webfont.eot);
+	src: url(../fonts/weblysleekuisb-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisb-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisb-webfont.woff) format("woff"), url(../fonts/weblysleekuisb-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisb-webfont.svg#weblysleek_uisemibold) format("svg");
+	font-weight: 700;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Webly Sleek Semibold Italic';
+	src: url(../fonts/weblysleekuisbi-webfont.eot);
+	src: url(../fonts/weblysleekuisbi-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisbi-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisbi-webfont.woff) format("woff"), url(../fonts/weblysleekuisbi-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisbi-webfont.svg#weblysleek_uisemibold_italic) format("svg");
+	font-weight: 700;
+	font-style: italic
+}
+@font-face {
+	font-family: 'Webly Sleek SemiLight';
+	src: url(../fonts/weblysleekuisl-webfont.eot);
+	src: url(../fonts/weblysleekuisl-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisl-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisl-webfont.woff) format("woff"), url(../fonts/weblysleekuisl-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisl-webfont.svg#weblysleek_uisemilight) format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Webly Sleek SemiLight Italic';
+	src: url(../fonts/weblysleekuisli-webfont.eot);
+	src: url(../fonts/weblysleekuisli-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisli-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisli-webfont.woff) format("woff"), url(../fonts/weblysleekuisli-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisli-webfont.svg#weblysleek_uisemilight_italic) format("svg");
+	font-weight: 400;
+	font-style: italic
+}
+@font-face {
+	font-family: icons;
+	src: url(../fonts/icons/icons.eot?qta720);
+	src: url(../fonts/icons/icons.eot?#iefixqta720) format("embedded-opentype"), url(../fonts/icons/icons.ttf?qta720) format("truetype"), url(../fonts/icons/icons.woff?qta720) format("woff"), url(../fonts/icons/icons.svg?qta720#icons) format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+body {
+	background: #fff;
+	color: #656565;
+	font-family: "Open Sans", sans-serif;
+}
+a, i {
+	color: #ffffff;
+	transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+	color: #1bb24c;
+	outline: none;
+	text-decoration: none;
+}
+p {
+	padding: 0;
+	margin: 0 0 30px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+/* Back to top button */
+.back-to-top {
+	position: fixed;
+	display: none;
+	background: #1bb14c;
+	color: #fff;
+	padding: 6px 12px 9px 12px;
+	font-size: 16px;
+	border-radius: 2px;
+	right: 15px;
+	bottom: 15px;
+	transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+.back-to-top {
+	bottom: 15px;
+}
+.nondisplay {
+	display: none;
+}
+}
+.back-to-top:focus {
+	background: #1bb14c;
+	color: #fff;
+	outline: none;
+}
+.back-to-top:hover {
+	background: #12422b;
+	color: #fff;
+}
+/*--------------------------------Header--------------------------------*/
+#header {
+	padding: 20px 0;
+	height: 84px;
+	transition: all 0.5s;
+	z-index: 997;
+	background: #12422b;
+	box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+#header i {
+	color: #ffffff;
+	margin: 10% 0px 0px 40px;
+}
+#header #logo h1 {
+	font-size: 42px;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+#header #logo img {
+	padding: 0;
+	margin: 0px 100px 0px 0px;
+}
+
+@media (max-width: 768px) {
+#header {
+	padding: 20px 0;
+	height: 74px;
+}
+#header i {
+	margin: 10px 0px 0px 0px;
+}
+#header #logo img {
+	max-height: 40px;
+	margin-left: 30px;
+}
+}
+/*--------------------------------Navigation Menu--------------------------------*/
+.nav-menu, .nav-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.nav-menu li {
+	position: relative;
+	white-space: nowrap;
+}
+.nav-menu > li {
+	float: left;
+}
+.nav-menu li:hover > ul, .nav-menu li.sfHover > ul {
+	display: block;
+}
+.nav-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+.nav-menu ul li {
+	min-width: 180px;
+}
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+	padding-right: 22px;
+}
+.sf-arrows .sf-with-ul:after {
+	content: "\f107";
+	position: absolute;
+	right: 8px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+}
+.sf-arrows ul .sf-with-ul:after {
+	content: "\f105";
+}
+/* Nav Meu Container */
+#nav-menu-container {
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+#nav-menu-container {
+	display: none;
+}
+}
+.nav-menu a {
+	padding: 10px 8px;
+	text-decoration: none;
+	display: inline-block;
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	outline: none;
+}
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+	color: #1bb14c;
+}
+.nav-menu > li {
+	margin-left: 10px;
+}
+.nav-menu ul {
+	margin: 4px 0 0 0;
+	padding: 10px;
+	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+	background: #fff;
+}
+.nav-menu ul li {
+	transition: 0.3s;
+}
+.nav-menu ul li a {
+	padding: 10px;
+	color: #12422b;
+	transition: 0.3s;
+	display: block;
+	font-size: 13px;
+	text-transform: none;
+}
+.nav-menu ul li:hover > a {
+	color: #12422b;
+}
+.nav-menu ul ul {
+	margin: 0;
+}
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	margin: 10px 20px 0 0;
+	border: 0;
+	background: none;
+	font-size: 24px;
+	display: none;
+	transition: all 0.4s;
+	outline: none;
+	cursor: pointer;
+}
+#mobile-nav-toggle i {
+	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+#mobile-nav-toggle {
+	display: inline;
+}
+}
+/* Mobile Nav Styling */
+#mobile-nav {
+	position: fixed;
+	top: 0;
+	padding-top: 18px;
+	bottom: 0;
+	z-index: 998;
+	background: rgba(52, 59, 64, 0.9);
+	left: -260px;
+	width: 260px;
+	overflow-y: auto;
+	transition: 0.4s;
+	margin: 4% 0 0 0;
+}
+#mobile-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#mobile-nav ul li {
+	position: relative;
+}
+#mobile-nav ul li a {
+	color: #fff;
+	font-size: 16px;
+	overflow: hidden;
+	padding: 10px 22px 10px 15px;
+	position: relative;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	outline: none;
+}
+#mobile-nav ul li a:hover {
+	color: #fff;
+}
+#mobile-nav ul li li {
+	padding-left: 30px;
+}
+#mobile-nav ul .menu-has-children i {
+	position: absolute;
+	right: 0;
+	z-index: 99;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+}
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+	color: #1bb14c;
+}
+#mobile-nav ul .menu-item-active {
+	color: #1bb14c;
+}
+#mobile-body-overly {
+	width: 100%;
+	height: 100%;
+	z-index: 997;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(52, 59, 64, 0.9);
+	display: none;
+}
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+	overflow: hidden;
+}
+body.mobile-nav-active #mobile-nav {
+	left: 0;
+}
+body.mobile-nav-active #mobile-nav-toggle {
+	color: #ffffff;
+}
+/*--------------------------------Sections Header--------------------------------*/
+.section-header {
+	margin-bottom: 30px;
+}
+.section-header h2 {
+	font-size: 32px;
+	color: #0c2e8a;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	padding-bottom: 20px;
+}
+.section-header h2::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 3px;
+	background: #50d8af;
+	bottom: 0;
+	left: 0;
+}
+.section-header p {
+	padding: 0;
+	margin: 0;
+}
+/*--------------------------------Contact Section--------------------------------*/
+#contact {
+	padding: 30px 0;
+	background: #efeff4;
+}
+#contact p {
+	margin-bottom: 0;
+	color: #000;
+}
+#contact h1 {
+		font-family: "Webly Sleek Light", Helvetica-, droid sans, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+  margin-bottom: 15px;
+  color: #999;
+}
+#contact a {
+	color: #000;
+}
+#contact a:hover {
+	color: #1bb14c;
+}
+#contact .title {
+			font-family: "Webly Sleek Light", Helvetica-, droid sans, sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+	margin: 30px 0px;
+}
+#contact .form {
+	margin: 30px 0px;
+}
+#contact .form #sendmessage {
+	color: #1bb14c;
+	border: 1px solid #1bb14c;
+	display: none;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+#contact .form #errormessage {
+	color: red;
+	display: none;
+	border: 1px solid red;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+	display: block;
+}
+#contact .form .validation {
+	color: red;
+	display: none;
+	margin: 0 0 20px;
+	font-weight: 400;
+	font-size: 13px;
+}
+#contact .form input, #contact .form select {
+	padding: 10px 14px;
+	border-radius: 0;
+	border-top: none;
+	box-shadow: none;
+	font-size: 15px;
+}
+button {
+	border: 0;
+	border-radius: 3px;
+	padding: 10px 10px;
+	color: #fff;
+	transition: 0.4s;
+	cursor: pointer;
+}
+button[type="submit"] {
+	background: #1bb14c;
+}
+button[type="submit"]:hover {
+	background: #148539;
+}
+button[type="button"] {
+	background: #1bb14c;
+}
+button[type="button"]:hover {
+	background: #148539;
+}
+button[type="reset"] {
+	background: #c65415;
+}
+button[type="reset"]:hover {
+	background: #984010;
+}
+/*--------------------------------Footer--------------------------------*/
+#footer {
+	background-color: rgba(18, 66, 43, 0.91);
+	padding: 0 0 30px 0;
+	font-size: 14px;
+}
+#footer .background {
+	background-image: url("../img/footer.png");
+	background-repeat: no-repeat;
+	background-position: left -50px bottom 30px;
+	background-size: 383px 342px;
+	padding: 55px 0;
+	text-align: center;
+}
+#footer .questionpart {
+	font-family: "Webly Sleek Light", Helvetica-, droid sans, sans-serif;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+	padding: 0;
+	color: #fff;
+	font-size: 30px;
+}
+#footer .questionpart a {
+	color: #5BD453;
+}
+#footer .social {
+	margin-top: 20px;
+}
+#footer .social [class*="fa fa-"] {
+	background: none;
+	border: 2px solid #00b624;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	margin: auto 3px;
+	width: 50px;
+	font-size: 25px;
+	text-align: center;
+}
+#footer .link {
+	border-top: 1px solid #00b624;
+	border-bottom: 1px solid #00b624;
+	padding: 20px 13px;
+	display: inline-block;
+}
+#footer .link a {
+	display: inline;
+	margin-right: 30px;
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+#footer .background {
+	background-image: url(../img/footer.png);
+	background-repeat: no-repeat;
+	background-position: center bottom -80px;
+	background-size: 383px 342px;
+	padding: 25px 0 155px 0;
+	text-align: center;
+}
+#footer .link {
+	width: 80%;
+}
+#footer .link a {
+	display: block;
+	text-align: center;
+}
+}
